@@ -12,8 +12,9 @@ namespace AddressBookUsingLinq
         static void Main(string[] args)
         {
             Console.WriteLine("***************Welcome To AddressBook Using Linq*************");
-            //Creating DataTable for addressbook problem UC1
-            DataTable addressbookcreatetable = new DataTable();
+            AddressBookDataTable addressBookDataTable = new AddressBookDataTable();
+            addressBookDataTable.createAddressBookTable();
+            Console.Read();
         }
     }
 }
